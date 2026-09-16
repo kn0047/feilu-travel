@@ -123,17 +123,17 @@ img{max-width:100%;display:block}
 .service-link svg{width:14px;height:14px}
 
 /* ===== ADVANTAGES ===== */
-.advantages{background:var(--white)}
+.advantages{background:linear-gradient(135deg,#0a1628 0%,var(--primary) 55%,#16324f 100%),radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px) 0 0/26px 26px;color:var(--white)}
 .advantages-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.adv-card{display:flex;gap:20px;padding:32px 28px;border-radius:var(--radius);background:var(--bg);transition:var(--transition);border:1px solid transparent}
-.adv-card:hover{background:var(--white);box-shadow:var(--shadow-md);border-color:rgba(201,150,62,.15);transform:translateY(-3px)}
-.adv-card:hover .adv-num{color:rgba(201,150,62,.35)}
-.adv-num{font-size:36px;font-weight:900;color:rgba(201,150,62,.2);line-height:1;flex-shrink:0;width:48px;transition:color .3s}
-.adv-content h3{font-size:17px;font-weight:700;color:var(--primary);margin-bottom:8px}
-.adv-content p{font-size:14px;color:var(--text-light);line-height:1.8}
+.adv-card{display:flex;gap:20px;padding:32px 28px;border-radius:var(--radius);background:rgba(255,255,255,.05);transition:var(--transition);border:1px solid rgba(255,255,255,.09)}
+.adv-card:hover{background:rgba(255,255,255,.11);box-shadow:0 14px 36px rgba(0,0,0,.3);border-color:rgba(201,150,62,.4);transform:translateY(-3px)}
+.adv-card:hover .adv-num{color:var(--accent-light)}
+.adv-num{font-size:36px;font-weight:900;color:rgba(201,150,62,.45);line-height:1;flex-shrink:0;width:48px;transition:color .3s}
+.adv-content h3{font-size:17px;font-weight:700;color:var(--white);margin-bottom:8px}
+.adv-content p{font-size:14px;color:rgba(255,255,255,.62);line-height:1.8}
 
 /* ===== TEAM ===== */
-.team{background:var(--bg)}
+.team{background:radial-gradient(900px 480px at 85% -10%,rgba(201,150,62,.10),transparent 60%),radial-gradient(720px 420px at 5% 110%,rgba(59,130,246,.08),transparent 60%),radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px) 0 0/26px 26px,#0a1628;color:var(--white)}
 .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
 .team-card{background:var(--white);border-radius:var(--radius);padding:36px 24px;text-align:center;transition:var(--transition);border:1px solid transparent}
 .team-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:rgba(201,150,62,.15)}
@@ -160,7 +160,7 @@ img{max-width:100%;display:block}
 .partner-item:hover span{color:var(--white)}
 
 /* ===== TESTIMONIALS ===== */
-.testimonials{background:var(--primary);color:var(--white)}
+.testimonials{background:radial-gradient(820px 470px at 12% -5%,rgba(201,150,62,.13),transparent 55%),radial-gradient(640px 400px at 93% 110%,rgba(201,150,62,.09),transparent 60%),url('data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%201400%20500%27%3E%3Cpath%20d%3D%27M60%20430%20C320%20110%20720%2080%201340%20250%27%20fill%3D%27none%27%20stroke%3D%27rgba%28201%2C150%2C62%2C0.16%29%27%20stroke-width%3D%272%27%20stroke-dasharray%3D%2710%2012%27%2F%3E%3Ccircle%20cx%3D%2760%27%20cy%3D%27430%27%20r%3D%275%27%20fill%3D%27rgba%28201%2C150%2C62%2C0.28%29%27%2F%3E%3Ccircle%20cx%3D%271340%27%20cy%3D%27250%27%20r%3D%275%27%20fill%3D%27rgba%28201%2C150%2C62%2C0.28%29%27%2F%3E%3C%2Fsvg%3E') center/cover no-repeat,var(--primary);color:var(--white)}
 .testimonials-wrap{position:relative;overflow:hidden}
 .testimonials-track{display:flex;gap:20px;width:max-content;animation:scrollTrack 120s linear infinite}
 .testimonials-track:hover{animation-play-state:paused}
@@ -199,7 +199,7 @@ img{max-width:100%;display:block}
 .region-card:not(.core) .region-tag{background:rgba(10,22,40,.06);color:var(--text-light)}
 
 /* ===== PROCESS ===== */
-.process{background:var(--bg)}
+.process{background:linear-gradient(180deg,#0d1b2a 0%,var(--primary) 130%),radial-gradient(rgba(255,255,255,.045) 1px,transparent 1px) 0 0/24px 24px;color:var(--white)}
 .process-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
 .process-step{text-align:center;padding:0 16px;position:relative}
 .process-step:not(:last-child)::after{content:'';position:absolute;top:32px;right:-50%;width:100%;height:2px;background:linear-gradient(90deg,var(--accent),rgba(201,150,62,.2));z-index:0}
@@ -207,8 +207,8 @@ img{max-width:100%;display:block}
 .process-step:hover .process-circle{background:var(--accent);transform:scale(1.1);box-shadow:0 8px 24px rgba(201,150,62,.3)}
 .process-step:hover .process-circle span{color:var(--white)}
 .process-circle span{font-size:22px;font-weight:900;color:var(--accent);transition:color .3s}
-.process-step h3{font-size:16px;font-weight:700;color:var(--primary);margin-bottom:8px}
-.process-step p{font-size:13px;color:var(--text-light);line-height:1.6}
+.process-step h3{font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px}
+.process-step p{font-size:13px;color:rgba(255,255,255,.62);line-height:1.6}
 
 /* ===== FAQ ===== */
 .faq{background:var(--white)}
@@ -489,7 +489,7 @@ img{max-width:100%;display:block}
 <!-- ADVANTAGES -->
 <section class="page-section advantages" id="advantages">
   <div class="container">
-    <div class="sec-title">
+    <div class="sec-title light">
       <div class="en">WHY CHOOSE US</div>
       <div class="cn">服务优势</div>
     </div>
@@ -507,7 +507,7 @@ img{max-width:100%;display:block}
 <!-- TEAM -->
 <section class="page-section team" id="team">
   <div class="container">
-    <div class="sec-title">
+    <div class="sec-title light">
       <div class="en">OUR TEAM</div>
       <div class="cn">专业团队</div>
     </div>
@@ -617,7 +617,7 @@ img{max-width:100%;display:block}
 <!-- PROCESS -->
 <section class="page-section process" id="process">
   <div class="container">
-    <div class="sec-title">
+    <div class="sec-title light">
       <div class="en">SERVICE PROCESS</div>
       <div class="cn">服务流程</div>
     </div>
