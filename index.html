@@ -768,21 +768,38 @@ function animateCount(el){
   }
   requestAnimationFrame(step);
 }
-var countObserver=new IntersectionObserver(function(entries){
-  entries.forEach(function(entry){
-    if(entry.isIntersecting){animateCount(entry.target);countObserver.unobserve(entry.target)}
-  });
-},{threshold:0.5});
-document.querySelectorAll('[data-count]').forEach(function(el){countObserver.observe(el)});
-
-// Scroll reveal
 (function(){
-  var els=document.querySelectorAll('.page-section > .container');
-  if(!('IntersectionObserver' in window)){els.forEach(function(el){el.classList.add('revealed')});return}
-  var io=new IntersectionObserver(function(es){
-    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('revealed');io.unobserve(e.target)}});
-  },{threshold:.1,rootMargin:'0px 0px -40px 0px'});
-  els.forEach(function(el){el.classList.add('reveal');io.observe(el)});
+  var nums=Array.prototype.slice.call(document.querySelectorAll('[data-count]'));
+  if(!nums.length){return}
+  function checkNums(){
+    var vh=window.innerHeight||document.documentElement.clientHeight;
+    nums.forEach(function(el){
+      if(el.getAttribute('data-done')){return}
+      var r=el.getBoundingClientRect();
+      if(r.top < vh*0.95){el.setAttribute('data-done','1');animateCount(el)}
+    });
+  }
+  window.addEventListener('scroll',checkNums,{passive:true});
+  window.addEventListener('resize',checkNums);
+  checkNums();
+})();
+
+// Scroll reveal (scroll-based)
+(function(){
+  var els=Array.prototype.slice.call(document.querySelectorAll('.page-section > .container'));
+  if(!els.length){return}
+  els.forEach(function(el){el.classList.add('reveal')});
+  function check(){
+    var vh=window.innerHeight||document.documentElement.clientHeight;
+    els.forEach(function(el){
+      if(el.classList.contains('revealed')){return}
+      var r=el.getBoundingClientRect();
+      if(r.top < vh*0.92){el.classList.add('revealed')}
+    });
+  }
+  window.addEventListener('scroll',check,{passive:true});
+  window.addEventListener('resize',check);
+  check();
 })();
 </script>
 </body>
