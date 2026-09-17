@@ -6,8 +6,34 @@
 <title>乐洲行(武汉)国际旅行社 - 专业一站式出境商务出行解决方案</title>
 <meta name="description" content="乐洲行(武汉)国际旅行社，专注国际签证、境外机票预订、国际空运及酒店配套服务，为企业及个人客户提供专业、高效、省心的一站式出境商务出行解决方案。">
 <link rel="icon" href="images/favicon.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kn0047.github.io/feilu-travel/">
+<meta property="og:title" content="乐洲行(武汉)国际旅行社 - 专业签证·机票·酒店·国际空运一站式服务">
+<meta property="og:description" content="专注国际签证、境外机票预订、国际空运及酒店配套服务，覆盖尼日利亚、加纳、肯尼亚等非洲主要商贸国家，为企业及个人客户提供省心的出境商务出行解决方案。">
+<meta property="og:image" content="https://kn0047.github.io/feilu-travel/images/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "乐洲行(武汉)国际旅行社",
+  "alternateName": "LEZHOUXING INTERNATIONAL TRAVEL SERVICE",
+  "description": "专注国际签证、境外机票预订、国际空运及酒店配套服务，为企业及个人客户提供一站式出境商务出行解决方案。",
+  "telephone": "+86-138-1190-2306",
+  "email": "wuhanfeilv01@foxmail.com",
+  "url": "https://kn0047.github.io/feilu-travel/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "何家嘴路与汉桥路交叉口西140米",
+    "addressLocality": "武汉市汉阳区",
+    "addressRegion": "湖北省",
+    "addressCountry": "CN"
+  },
+  "openingHours": "Mo-Sa 09:00-18:00",
+  "priceRange": "$$"
+}
+</script>
+
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -60,23 +86,22 @@ img{max-width:100%;display:block}
 /* ===== HERO ===== */
 .hero{padding:0}
 .hero-bg{position:absolute;inset:0;background:url('images/hero.jpg') center/cover no-repeat;z-index:0}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,22,40,.85) 0%,rgba(10,22,40,.5) 50%,rgba(10,22,40,.75) 100%);z-index:1}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,22,40,.88) 0%,rgba(10,22,40,.62) 50%,rgba(10,22,40,.78) 100%);z-index:1}
+.hero .container{position:relative;z-index:2}
 .hero-content{position:relative;z-index:2;color:var(--white);max-width:800px}
-.hero-en{font-size:52px;font-weight:900;letter-spacing:2px;margin-bottom:16px;line-height:1.1}
-.hero-en .accent{color:var(--accent-light)}
-.hero-slogan{font-size:26px;font-weight:500;color:rgba(255,255,255,.9);margin-bottom:32px;letter-spacing:4px}
+.hero-cn{font-size:48px;font-weight:900;letter-spacing:2px;margin-bottom:12px;line-height:1.25;color:#fff}
+.hero-cn .accent{color:var(--accent-light)}
+.hero-en{font-size:14px;font-weight:600;letter-spacing:3.5px;line-height:1.4;margin-bottom:16px;color:rgba(255,255,255,.82)}
+.hero-slogan{font-size:26px;font-weight:500;color:#fff;margin-bottom:32px;letter-spacing:4px}
 .hero-slogan span{margin:0 12px;color:var(--accent)}
-.hero-desc{font-size:16px;color:rgba(255,255,255,.7);line-height:1.9;max-width:600px;margin-bottom:40px}
+.hero-desc{font-size:16px;color:rgba(255,255,255,.92);line-height:1.9;max-width:600px;margin-bottom:40px}
 .hero-btns{display:flex;gap:16px;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:50px;font-size:15px;font-weight:600;cursor:pointer;transition:var(--transition);border:none;font-family:inherit}
 .btn-gold{background:var(--accent);color:var(--white)}
 .btn-gold:hover{background:var(--accent-light);transform:translateY(-2px);box-shadow:0 8px 32px rgba(201,150,62,.3)}
-.btn-outline{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.4)}
-.btn-outline:hover{border-color:var(--white);background:rgba(255,255,255,.1)}
+.btn-outline{background:rgba(255,255,255,.08);color:var(--white);border:2px solid rgba(255,255,255,.6)}
+.btn-outline:hover{border-color:var(--white);background:rgba(255,255,255,.14)}
 .btn svg{width:18px;height:18px}
-.hero-scroll{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.6);font-size:12px;letter-spacing:2px;animation:bounce 2s infinite}
-.hero-scroll svg{width:20px;height:20px}
-@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
 
 /* ===== ABOUT (dark + world map) ===== */
 .about{background:var(--primary);color:var(--white)}
@@ -93,7 +118,7 @@ img{max-width:100%;display:block}
 .about-stats{display:flex;flex-direction:column}
 .stat-row{display:flex;align-items:center;justify-content:space-between;padding:32px 0;border-bottom:1px solid rgba(255,255,255,.12)}
 .stat-row:last-child{border-bottom:none}
-.stat-info .num{font-size:48px;font-weight:900;color:var(--accent-light);line-height:1;font-family:"DIN",Arial,sans-serif}
+.stat-info .num{font-size:48px;font-weight:900;color:var(--accent-light);line-height:1;font-family:"DIN",Arial,sans-serif;white-space:nowrap}
 .stat-info .num .unit{font-size:24px;margin-left:4px}
 .stat-info .label{font-size:14px;color:rgba(255,255,255,.6);margin-top:6px}
 .stat-icon{width:56px;height:56px;border-radius:14px;background:rgba(201,150,62,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0}
@@ -162,7 +187,7 @@ img{max-width:100%;display:block}
 .partner-item:hover span{color:var(--white)}
 
 /* ===== TESTIMONIALS ===== */
-.testimonials{background:url('data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%201600%20900%27%3E%3Cpath%20d%3D%27M-60%20850%20C%20420%20280%201120%20200%201660%20660%27%20fill%3D%27none%27%20stroke%3D%27rgba%28201%2C150%2C62%2C0.13%29%27%20stroke-width%3D%272%27%20stroke-dasharray%3D%2712%2014%27%2F%3E%3Ccircle%20cx%3D%27-60%27%20cy%3D%27850%27%20r%3D%276%27%20fill%3D%27rgba%28201%2C150%2C62%2C0.3%29%27%2F%3E%3Ccircle%20cx%3D%27430%27%20cy%3D%27300%27%20r%3D%274%27%20fill%3D%27rgba%28201%2C150%2C62%2C0.22%29%27%2F%3E%3Ccircle%20cx%3D%27820%27%20cy%3D%27230%27%20r%3D%274%27%20fill%3D%27rgba%28201%2C150%2C62%2C0.22%29%27%2F%3E%3Ccircle%20cx%3D%271660%27%20cy%3D%27660%27%20r%3D%276%27%20fill%3D%27rgba%28201%2C150%2C62%2C0.3%29%27%2F%3E%3C%2Fsvg%3E') center/cover no-repeat,radial-gradient(820px 470px at 12% -5%,rgba(201,150,62,.13),transparent 55%),radial-gradient(640px 400px at 93% 110%,rgba(201,150,62,.09),transparent 60%),var(--primary);color:var(--white)}%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%201400%20500%27%3E%3Cpath%20d%3D%27M60%20430%20C320%20110%20720%2080%201340%20250%27%20fill%3D%27none%27%20stroke%3D%27rgba%28201%2C150%2C62%2C0.16%29%27%20stroke-width%3D%272%27%20stroke-dasharray%3D%2710%2012%27%2F%3E%3Ccircle%20cx%3D%2760%27%20cy%3D%27430%27%20r%3D%275%27%20fill%3D%27rgba%28201%2C150%2C62%2C0.28%29%27%2F%3E%3Ccircle%20cx%3D%271340%27%20cy%3D%27250%27%20r%3D%275%27%20fill%3D%27rgba%28201%2C150%2C62%2C0.28%29%27%2F%3E%3C%2Fsvg%3E') center/cover no-repeat,var(--primary);color:var(--white)}
+.testimonials{background:url('data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%201600%20900%27%3E%3Cpath%20d%3D%27M-60%20850%20C%20420%20280%201120%20200%201660%20660%27%20fill%3D%27none%27%20stroke%3D%27rgba%28201%2C150%2C62%2C0.13%29%27%20stroke-width%3D%272%27%20stroke-dasharray%3D%2712%2014%27%2F%3E%3Ccircle%20cx%3D%27-60%27%20cy%3D%27850%27%20r%3D%276%27%20fill%3D%27rgba%28201%2C150%2C62%2C0.3%29%27%2F%3E%3Ccircle%20cx%3D%27430%27%20cy%3D%27300%27%20r%3D%274%27%20fill%3D%27rgba%28201%2C150%2C62%2C0.22%29%27%2F%3E%3Ccircle%20cx%3D%27820%27%20cy%3D%27230%27%20r%3D%274%27%20fill%3D%27rgba%28201%2C150%2C62%2C0.22%29%27%2F%3E%3Ccircle%20cx%3D%271660%27%20cy%3D%27660%27%20r%3D%276%27%20fill%3D%27rgba%28201%2C150%2C62%2C0.3%29%27%2F%3E%3C%2Fsvg%3E') center/cover no-repeat,radial-gradient(820px 470px at 12% -5%,rgba(201,150,62,.13),transparent 55%),radial-gradient(640px 400px at 93% 110%,rgba(201,150,62,.09),transparent 60%),var(--primary);color:var(--white)}
 .testimonials-wrap{position:relative;overflow:hidden}
 .testimonials-track{display:flex;gap:20px;width:max-content;animation:scrollTrack 120s linear infinite}
 .testimonials-track:hover{animation-play-state:paused}
@@ -211,7 +236,7 @@ img{max-width:100%;display:block}
 .process{background:url('data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%201600%20900%27%3E%3Cpath%20d%3D%27M-60%20850%20C%20420%20280%201120%20200%201660%20660%27%20fill%3D%27none%27%20stroke%3D%27rgba%28201%2C150%2C62%2C0.13%29%27%20stroke-width%3D%272%27%20stroke-dasharray%3D%2712%2014%27%2F%3E%3Ccircle%20cx%3D%27-60%27%20cy%3D%27850%27%20r%3D%276%27%20fill%3D%27rgba%28201%2C150%2C62%2C0.3%29%27%2F%3E%3Ccircle%20cx%3D%27430%27%20cy%3D%27300%27%20r%3D%274%27%20fill%3D%27rgba%28201%2C150%2C62%2C0.22%29%27%2F%3E%3Ccircle%20cx%3D%27820%27%20cy%3D%27230%27%20r%3D%274%27%20fill%3D%27rgba%28201%2C150%2C62%2C0.22%29%27%2F%3E%3Ccircle%20cx%3D%271660%27%20cy%3D%27660%27%20r%3D%276%27%20fill%3D%27rgba%28201%2C150%2C62%2C0.3%29%27%2F%3E%3C%2Fsvg%3E') center/cover no-repeat,radial-gradient(rgba(255,255,255,.045) 1px,transparent 1px) 0 0/24px 24px,linear-gradient(180deg,#0d1b2a 0%,var(--primary) 130%);color:var(--white)}
 .process-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
 .process-step{text-align:center;padding:0 16px;position:relative}
-.process-step:not(:last-child)::after{content:'';position:absolute;top:32px;right:-50%;width:100%;height:2px;background:linear-gradient(90deg,var(--accent),rgba(201,150,62,.2));z-index:0}
+.process-step:not(:last-child)::after{content:'';position:absolute;top:31px;right:-50%;width:100%;height:3px;background:linear-gradient(90deg,rgba(201,150,62,.9),rgba(201,150,62,.35));z-index:0}
 .process-circle{width:64px;height:64px;border-radius:50%;background:var(--white);border:2px solid var(--accent);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;position:relative;z-index:1;box-shadow:var(--shadow);transition:all .3s}
 .process-step:hover .process-circle{background:var(--accent);transform:scale(1.1);box-shadow:0 8px 24px rgba(201,150,62,.3)}
 .process-step:hover .process-circle span{color:var(--white)}
@@ -246,15 +271,25 @@ img{max-width:100%;display:block}
 .contact-item-text h4{font-size:14px;font-weight:600;color:rgba(255,255,255,.6);margin-bottom:4px}
 .contact-item-text p{font-size:15px;color:var(--white);font-weight:500;line-height:1.5}
 .contact-form{background:var(--white);border-radius:var(--radius);padding:40px 36px;box-shadow:var(--shadow-md)}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
-.form-group{margin-bottom:16px}
-.form-group label{display:block;font-size:13px;font-weight:600;color:var(--primary);margin-bottom:8px}
-.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 16px;border:1px solid #e2e6ec;border-radius:var(--radius-sm);font-size:14px;font-family:inherit;color:var(--text);transition:border-color .3s,box-shadow .3s;background:var(--white)}
-.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(201,150,62,.1)}
-.form-group textarea{resize:vertical;min-height:100px}
-.form-submit{width:100%;padding:14px;background:var(--accent);color:var(--white);border:none;border-radius:var(--radius-sm);font-size:15px;font-weight:600;cursor:pointer;transition:var(--transition);font-family:inherit;display:flex;align-items:center;justify-content:center;gap:8px}
-.form-submit:hover{background:var(--accent-light);transform:translateY(-1px);box-shadow:0 8px 32px rgba(201,150,62,.25)}
-.form-submit svg{width:18px;height:18px}
+.cta-title{font-size:20px;font-weight:700;color:var(--primary);margin-bottom:6px}
+.cta-sub{font-size:13.5px;color:var(--text-light);line-height:1.6;margin-bottom:24px}
+.cta-grid{display:grid;grid-template-columns:1fr 190px;gap:26px;align-items:center}
+.cta-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:15px 18px;border-radius:12px;font-size:15px;font-weight:700;cursor:pointer;transition:var(--transition);font-family:inherit;border:none;text-decoration:none}
+.cta-btn svg{width:20px;height:20px;flex-shrink:0}
+.cta-btn-call{background:var(--accent);color:var(--white);margin-bottom:12px}
+.cta-btn-call:hover{background:var(--accent-light);transform:translateY(-2px);box-shadow:0 10px 28px rgba(201,150,62,.35)}
+.cta-btn-wechat{background:var(--white);color:var(--primary);border:2px solid #d5dbe4}
+.cta-btn-wechat:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+.cta-btn-wechat.copied{border-color:#2e9e5b;color:#2e9e5b}
+.cta-mail{display:flex;align-items:center;justify-content:center;gap:6px;font-size:13px;color:var(--text-muted);margin-top:14px;text-decoration:none;transition:color .3s;word-break:break-all}
+.cta-mail:hover{color:var(--accent)}
+.cta-mail svg{width:14px;height:14px;flex-shrink:0}
+.cta-qr-wrap{display:flex;flex-direction:column;align-items:center}
+.cta-qr{width:190px;height:190px;padding:10px;border:1px solid #e2e6ec;border-radius:14px;background:var(--white)}
+.cta-qr img{width:100%;height:100%;object-fit:cover;border-radius:8px;display:block}
+.cta-qr-cap{text-align:center;font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5}
+.cta-note{display:flex;align-items:flex-start;gap:10px;margin-top:22px;padding:12px 16px;background:rgba(201,150,62,.09);border-radius:10px;font-size:13px;color:var(--text-light);line-height:1.6}
+.cta-note svg{width:16px;height:16px;color:var(--accent);flex-shrink:0;margin-top:2px}
 
 /* ===== FOOTER ===== */
 .footer{background:var(--primary);color:rgba(255,255,255,.7);padding:70px 0 0}
@@ -280,7 +315,7 @@ img{max-width:100%;display:block}
 .footer-addr{font-size:13px;color:rgba(255,255,255,.55);line-height:1.8;margin-bottom:20px}
 .footer-qr{display:flex;gap:16px}
 .footer-qr-item{text-align:center}
-.footer-qr-box{width:80px;height:80px;background:var(--white);border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:6px}
+.footer-qr-box{width:96px;height:96px;background:var(--white);border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:6px}
 .footer-qr-box img{width:100%;height:100%;object-fit:cover;border-radius:8px;display:block}
 .footer-qr-item span{font-size:11px;color:rgba(255,255,255,.5)}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:24px 40px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
@@ -325,7 +360,8 @@ img{max-width:100%;display:block}
   .nav{display:none;position:fixed;top:0;right:-100%;width:280px;height:100vh;background:var(--primary);flex-direction:column;padding:80px 30px;gap:24px;transition:right .4s;z-index:999}
   .nav.open{right:0}
   .mobile-toggle{display:flex}
-  .hero-en{font-size:32px}
+  .hero-cn{font-size:32px}
+  .hero-en{font-size:12px;letter-spacing:3px}
   .hero-slogan{font-size:18px;letter-spacing:2px}
   .sec-title .cn{font-size:28px}
   .about-grid{grid-template-columns:1fr;gap:40px}
@@ -338,13 +374,13 @@ img{max-width:100%;display:block}
   .regions-grid{grid-template-columns:1fr}
   .process-steps{grid-template-columns:1fr;gap:30px}
   .contact-grid{grid-template-columns:1fr}
-  .form-row{grid-template-columns:1fr}
+  .cta-grid{grid-template-columns:1fr;justify-items:center}
   .footer-top{grid-template-columns:1fr}
   .footer-bottom{flex-direction:column;text-align:center;padding:24px 20px}
-  .hero-scroll{display:none}
 }
 @media(max-width:480px){
-  .hero-en{font-size:26px}
+  .hero-cn{font-size:26px}
+  .hero-en{font-size:11px;letter-spacing:2px}
   .hero-slogan{font-size:15px;letter-spacing:1px}
   .hero-desc{font-size:13px}
   .hero-btns{flex-direction:column;gap:12px}
@@ -385,7 +421,8 @@ img{max-width:100%;display:block}
   <div class="hero-overlay"></div>
   <div class="container">
     <div class="hero-content">
-      <div class="hero-en">LEZHOUXING <span class="accent">INTERNATIONAL</span><br>TRAVEL SERVICE</div>
+      <h1 class="hero-cn">乐洲行<span class="accent">（武汉）</span>国际旅行社</h1>
+      <div class="hero-en">LEZHOUXING INTERNATIONAL TRAVEL SERVICE</div>
       <div class="hero-slogan">专业签证<span>|</span>全球机票<span>|</span>境外酒店<span>|</span>国际空运</div>
       <p class="hero-desc">乐洲行(武汉)国际旅行社专注国际签证、境外机票预订、国际空运及酒店配套服务，为企业及个人客户提供专业、高效、省心的一站式出境商务出行服务。</p>
       <div class="hero-btns">
@@ -393,10 +430,6 @@ img{max-width:100%;display:block}
         <a href="#contact" class="btn btn-outline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg> 立即咨询</a>
       </div>
     </div>
-  </div>
-  <div class="hero-scroll">
-    <span>SCROLL</span>
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
   </div>
 </section>
 
@@ -420,28 +453,28 @@ img{max-width:100%;display:block}
       <div class="about-stats">
         <div class="stat-row">
           <div class="stat-info">
-            <div class="num"><span data-count="10">0</span><span class="unit">+</span></div>
+            <div class="num"><span data-count="10">10</span><span class="unit">+</span></div>
             <div class="label">年行业深耕经验</div>
           </div>
           <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
         </div>
         <div class="stat-row">
           <div class="stat-info">
-            <div class="num"><span data-count="48">0</span><span class="unit">+</span></div>
+            <div class="num"><span data-count="48">48</span><span class="unit">+</span></div>
             <div class="label">覆盖国家与地区</div>
           </div>
           <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
         </div>
         <div class="stat-row">
           <div class="stat-info">
-            <div class="num"><span data-count="98">0</span><span class="unit">%</span></div>
-            <div class="label">签证通过率</div>
+            <div class="num"><span data-count="100">100</span><span class="unit">%</span></div>
+            <div class="label">客户一对一顾问服务</div>
           </div>
-          <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg></div>
         </div>
         <div class="stat-row">
           <div class="stat-info">
-            <div class="num"><span data-count="3984">0</span><span class="unit">+</span></div>
+            <div class="num"><span data-count="3984">3,984</span><span class="unit">+</span></div>
             <div class="label">累计服务企业与客户</div>
           </div>
           <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
@@ -463,7 +496,7 @@ img{max-width:100%;display:block}
         <div class="service-img visa"></div>
         <div class="service-body">
           <h3>各国签证办理</h3>
-          <p>覆盖全球主要国家与地区，尤其聚焦非洲跨境商贸高频区域，提供精准的签证审核指导与高通过率保障。</p>
+          <p>覆盖全球主要国家与地区，尤其聚焦非洲跨境商贸高频区域，提供精准的签证审核指导与细致的材料把关。</p>
           <a href="#contact" class="service-link">了解更多 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
@@ -505,7 +538,7 @@ img{max-width:100%;display:block}
     <div class="advantages-grid">
       <div class="adv-card"><div class="adv-num">01</div><div class="adv-content"><h3>丰富行业经验</h3><p>多年深耕涉外商务配套领域，积累了丰富的境外出行实操经验与稳定的行业资源。</p></div></div>
       <div class="adv-card"><div class="adv-num">02</div><div class="adv-content"><h3>专业团队保障</h3><p>拥有经验丰富的签证顾问、行程规划师和票务专员团队，全流程提供专业支持。</p></div></div>
-      <div class="adv-card"><div class="adv-num">03</div><div class="adv-content"><h3>高签证通过率</h3><p>精准的签证材料审核指导和丰富的递签经验，确保极高的签证申请通过率。</p></div></div>
+      <div class="adv-card"><div class="adv-num">03</div><div class="adv-content"><h3>材料双重把关</h3><p>签证材料预审与复核双重把关，提前规避常见补件与退件问题，稳妥递交每一份申请。</p></div></div>
       <div class="adv-card"><div class="adv-num">04</div><div class="adv-content"><h3>标准化流程</h3><p>成熟的标准服务流程，减少沟通成本，让客户享受高效、省心的服务体验。</p></div></div>
       <div class="adv-card"><div class="adv-num">05</div><div class="adv-content"><h3>定制化方案</h3><p>根据企业及个人客户的不同需求，量身定制最优的出行方案与行程规划。</p></div></div>
       <div class="adv-card"><div class="adv-num">06</div><div class="adv-content"><h3>全程跟踪服务</h3><p>从咨询到出行全程跟踪，及时响应客户需求，解决出行中的各类突发问题。</p></div></div>
@@ -521,10 +554,10 @@ img{max-width:100%;display:block}
       <div class="cn">专业团队</div>
     </div>
     <div class="team-grid">
-      <div class="team-card"><div class="team-avatar">钟</div><h3>钟经理</h3><div class="team-role">签证部经理</div><p>10年签证行业经验，精通各国签证政策与流程，带领签证团队保持98%以上通过率</p></div>
+      <div class="team-card"><div class="team-avatar">钟</div><h3>钟经理</h3><div class="team-role">签证部经理</div><p>21年签证行业经验，精通各国签证政策与流程，擅长复杂材料把关与拒签再签处理</p></div>
       <div class="team-card"><div class="team-avatar">陈</div><h3>陈主管</h3><div class="team-role">票务部主管</div><p>8年国际机票代理经验，熟悉全球航线网络，为客户提供最优出行方案</p></div>
       <div class="team-card"><div class="team-avatar">王</div><h3>王顾问</h3><div class="team-role">高级商务顾问</div><p>专注非洲市场多年，深入了解当地商务环境，为企业出海保驾护航</p></div>
-      <div class="team-card"><div class="team-avatar">李</div><h3>李专员</h3><div class="team-role">办理专员</div><p>熟悉各国签证材料与递交流程，细致审核每一份文件，确保客户顺利出签</p></div>
+      <div class="team-card"><div class="team-avatar">李</div><h3>李专员</h3><div class="team-role">办理专员</div><p>熟悉各国签证材料与递交流程，细致审核每一份文件，助力客户顺利出签</p></div>
       <div class="team-card"><div class="team-avatar">周</div><h3>周专员</h3><div class="team-role">办理专员</div><p>熟悉全球航线与票务系统，快速比价出票，为客户节省出行成本与时间</p></div>
       <div class="team-card"><div class="team-avatar">吴</div><h3>吴专员</h3><div class="team-role">办理专员</div><p>全程跟踪客户出行需求，及时响应各类突发问题，保障行程顺畅无忧</p></div>
       <div class="team-card"><div class="team-avatar">C</div><h3>Chinedu</h3><div class="team-role">尼日利亚商务经理</div><p>常驻尼日利亚拉各斯，负责当地商务考察、工厂参观与地接资源对接，为企业出海非洲保驾护航</p></div>
@@ -648,12 +681,16 @@ img{max-width:100%;display:block}
       <div class="cn">常见问题</div>
     </div>
     <div class="faq-list">
-      <div class="faq-item active"><div class="faq-q" onclick="toggleFaq(this)">办理非洲国家签证一般需要多长时间？<div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p>不同国家的签证周期有所不同。尼日利亚、加纳等常见非洲国家的签证一般需要5-10个工作日，肯尼亚、坦桑尼亚等国通常为3-7个工作日。我们会根据您的具体出行时间提前规划，确保按时拿到签证。</p></div></div>
+      <div class="faq-item active"><div class="faq-q" onclick="toggleFaq(this)">办理非洲国家签证一般需要多长时间？<div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p>不同国家的签证周期有所不同。尼日利亚、加纳等常见非洲国家的签证一般需要3-5个工作日，肯尼亚、坦桑尼亚等国通常为3-7个工作日。我们会根据您的具体出行时间提前规划，确保按时拿到签证。</p></div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">办理签证需要准备哪些材料？<div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p>一般需要提供有效期6个月以上的护照、护照照片、在职证明或营业执照、行程单、酒店预订确认等基础材料。不同国家可能有额外要求，我们的签证顾问会根据目的国要求为您提供详细的材料清单和填写指导。</p></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">签证被拒签了怎么办？<div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p>我们拥有丰富经验，通过率保持在98%以上。如果不幸被拒签，我们会帮您分析拒签原因，补充完善材料后重新递交申请。同时提供免费的二次申请指导服务，最大程度提高再次申请的通过率。</p></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">签证被拒签了怎么办？<div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p>签证结果由使领馆最终决定，我们会通过材料预审把风险降到最低。如果不幸被拒签，我们会帮您分析拒签原因，补充完善材料后重新递交申请，并提供免费的二次申请指导服务。</p></div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">可以帮忙预订机票和酒店吗？<div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p>当然可以！我们提供签证、机票、酒店的一站式服务。我们与全球主流航空公司和酒店集团有长期合作，能够为您提供性价比最优的出行方案。打包预订通常还能享受更优惠的价格。</p></div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">你们的服务费用大概是多少？<div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p>我们的服务费用透明公开，根据不同国家和服务类型有所差异。签证服务费根据目的国和签证类型而定，机票和酒店按实际价格收取，无隐形消费。欢迎致电138-1190-2306咨询具体报价。</p></div></div>
       <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">企业团队出行有什么特别服务？<div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p>针对企业团队出行，我们提供专属的团体服务方案，包括批量签证办理、团体机票预订、酒店团队房安排、行程统一规划等。同时可为长期合作企业签订年度服务协议，享受更优惠的价格和更优先的服务。</p></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">可以加急办理签证吗？<div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p>部分国家设有加急通道，如肯尼亚、坦桑尼亚可缩短至2-3个工作日出签，具体时限与费用视目的国政策而定。如有紧急出行安排，请尽早致电138-1190-2306，我们会优先为您评估最快的可行方案。</p></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">付款方式有哪些？可以开发票吗？<div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p>支持对公转账、微信、支付宝等多种付款方式，可开具正规增值税发票。企业客户可签订服务协议，按协议周期统一结算，详情请咨询您的专属顾问。</p></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">只服务企业客户吗？个人可以办理吗？<div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p>个人与企业客户均可办理。我们既服务外贸企业、参展团体的批量出行，也为个人商务出行、探亲访友等需求提供同等专业的签证、机票与酒店配套服务。</p></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">如何开始合作？<div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p>您可以通过电话138-1190-2306、微信扫码添加或邮件联系我们。工作时间内咨询，专属顾问会在2小时内与您联系，确认需求后即可开始办理。</p></div></div>
     </div>
   </div>
 </section>
@@ -675,12 +712,20 @@ img{max-width:100%;display:block}
         <div class="contact-item"><div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="contact-item-text"><h4>工作时间</h4><p>周一至周六 9:00 - 18:00</p></div></div>
       </div>
       <div class="contact-form">
-        <form onsubmit="handleSubmit(event)">
-          <div class="form-row"><div class="form-group"><label>您的姓名 *</label><input type="text" placeholder="请输入姓名" required></div><div class="form-group"><label>联系电话 *</label><input type="tel" placeholder="请输入手机号" required></div></div>
-          <div class="form-row"><div class="form-group"><label>目的地国家</label><input type="text" placeholder="如：尼日利亚、肯尼亚"></div><div class="form-group"><label>服务类型</label><select><option>签证办理</option><option>机票预订</option><option>酒店预订</option><option>国际空运</option><option>一站式全包</option></select></div></div>
-          <div class="form-group"><label>需求描述</label><textarea placeholder="请简要描述您的出行需求，如出行时间、人数等..."></textarea></div>
-          <button type="submit" class="form-submit">提交咨询 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
-        </form>
+        <h3 class="cta-title">快捷咨询通道</h3>
+        <p class="cta-sub">电话、微信直连专属顾问，无需等待留言回访，沟通更高效。</p>
+        <div class="cta-grid">
+          <div class="cta-actions">
+            <a href="tel:13811902306" class="cta-btn cta-btn-call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> 一键拨打 138-1190-2306</a>
+            <button type="button" class="cta-btn cta-btn-wechat" onclick="copyWechat(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg> <span class="cta-btn-label">复制微信号 13811902306</span></button>
+            <a href="mailto:wuhanfeilv01@foxmail.com" class="cta-mail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> 邮件咨询 wuhanfeilv01@foxmail.com</a>
+          </div>
+          <div class="cta-qr-wrap">
+            <div class="cta-qr"><img src="images/wechat-qr.jpg" alt="乐洲行微信咨询二维码"></div>
+            <p class="cta-qr-cap">微信扫码添加<br>专属顾问</p>
+          </div>
+        </div>
+        <div class="cta-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 工作时间内咨询，专属顾问会在 2 小时内与您联系；紧急出行需求请直接电话联系。</div>
       </div>
     </div>
   </div>
@@ -695,7 +740,7 @@ img{max-width:100%;display:block}
       <div class="footer-social">
         <a href="tel:13811902306"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></a>
         <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
-        <a href="mailto:info@feilu.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        <a href="mailto:wuhanfeilv01@foxmail.com" aria-label="发邮件咨询"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
       </div>
     </div>
     <div class="footer-col"><h4>快速导航</h4><ul><li><a href="#home">首页</a></li><li><a href="#about">关于我们</a></li><li><a href="#services">核心业务</a></li><li><a href="#advantages">服务优势</a></li><li><a href="#team">专业团队</a></li><li><a href="#faq">常见问题</a></li></ul></div>
@@ -709,7 +754,7 @@ img{max-width:100%;display:block}
       </div>
     </div>
   </div>
-  <div class="footer-bottom"><p>&copy; 2026 乐洲行(武汉)国际旅行社 版权所有 | 鄂ICP备XXXXXXXX号</p><p>专业一站式出境商务出行解决方案提供商</p></div>
+  <div class="footer-bottom"><p>&copy; 2026 乐洲行(武汉)国际旅行社 版权所有</p><p>专业一站式出境商务出行解决方案提供商</p></div>
 </footer>
 
 <!-- SIDE BAR -->
@@ -722,7 +767,7 @@ img{max-width:100%;display:block}
   <div class="sidebar-item" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
     <span>咨询</span>
-    <div class="sidebar-tip">在线留言咨询</div>
+    <div class="sidebar-tip">电话 · 微信 · 扫码咨询</div>
   </div>
   <div class="sidebar-item" onclick="window.scrollTo({top:0,behavior:'smooth'})">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
@@ -752,8 +797,29 @@ function toggleFaq(el){var item=el.parentElement;var was=item.classList.contains
 // Testimonials seamless loop
 (function(){var t=document.querySelector('.testimonials-track');if(t){t.innerHTML+=t.innerHTML;}})();
 
-// Form
-function handleSubmit(e){e.preventDefault();alert('感谢您的咨询！我们的专业顾问将在24小时内与您联系。\n如需紧急服务，请直接拨打 138-1190-2306');e.target.reset()}
+// Copy WeChat ID
+function copyWechat(btn){
+  var text='13811902306';
+  function feedback(){
+    var label=btn.querySelector('.cta-btn-label');
+    var old=label.textContent;
+    label.textContent='微信号已复制，请到微信添加';
+    btn.classList.add('copied');
+    setTimeout(function(){label.textContent=old;btn.classList.remove('copied')},2500);
+  }
+  function fallback(){
+    var ta=document.createElement('textarea');
+    ta.value=text;
+    ta.style.position='fixed';ta.style.opacity='0';
+    document.body.appendChild(ta);
+    ta.select();
+    try{document.execCommand('copy');feedback()}catch(e){}
+    document.body.removeChild(ta);
+  }
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(feedback).catch(fallback);
+  }else{fallback()}
+}
 
 // Number count-up animation
 function animateCount(el){
